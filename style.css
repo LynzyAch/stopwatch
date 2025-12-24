@@ -1,0 +1,78 @@
+#videoBg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(0, 0%, 0%);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+h1 {
+    color: rgb(31, 243, 8);
+    text-shadow: 0px 0px 50px white;
+    font-size: 5rem;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    text-shadow: 2px 2px 30px rgb(56, 255, 2);
+    color: white;
+    font-size: 7rem;
+    font-family: monospace;
+    margin-bottom: 35px;
+    text-align: center;
+    padding: 10px 15px;
+    min-width: 150px;
+}
+
+.btn button {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 20px;
+    min-width: 200px;
+    color: rgb(56, 255, 2);
+    border-radius: 30px;
+    border: none;
+    background-color: hsl(0, 0%, 0%);
+    box-shadow: 0px 0px 30px 3px hsl(84, 92%, 42%);
+    margin: 20px;
+    transition: box-shadow 0.20s ease-in, background-color 0.20s ease-in;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    box-shadow: 0px 0px 30px 15px hsl(84, 92%, 70%);
+    background-color: hsl(0, 0%, 10%);
+}
+
+.btn button:active {
+    background-color: hsl(0, 0%, 30%);
+}

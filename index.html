@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troll Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <video autoplay loop muted id="videoBg">
+        <source src="bgvideo.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="items">
+            <h1>STOPWATCH</h1>
+            <div class="display" id="timer">
+                00:00:00:00
+            </div>
+            <div class="btn">
+                <button id="start" onclick="start()">Start</button>
+                <button id="stop" onclick="stop()">Stop</button>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
